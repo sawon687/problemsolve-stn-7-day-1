@@ -21,7 +21,7 @@
 // staircase(4)
 
 
-// problem 2 solution
+// // problem 2 solution
 
 // var gradingStudents = function(grades:number[]) {
 //   const newArray:number[]=[]
@@ -37,3 +37,29 @@
 
 
 // console.log(gradingStudents([73, 67, 38, 33]))
+
+// problem 3 solution
+
+var timeConversion = function(s:string) {
+    
+    const modifier=s.slice(-2)
+    const modifierTimer=s.slice(0,-2)
+  
+
+    let [hour,minute,second]=modifierTimer.split(":")
+
+
+        if(hour==='12')
+        {
+           hour=modifier==='AM'?"00":"12"
+        }else{
+           if(hour=="PM")
+           {
+             hour=String(Number(hour)+12)
+           }
+        }
+
+    return `${hour}:${minute}:${second}`
+};
+
+console.log(timeConversion("07:05:45PM")); 
