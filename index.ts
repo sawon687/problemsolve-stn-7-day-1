@@ -103,15 +103,18 @@
 // console.log(positiveSum([1, -4, 7, 12]))
 // console.log(positiveSum([-1, -2, 0, -5]))
 
-//  problem 07 solution
-var summation = function(num:number) {
-    let sum=0
-      for(let i=1;i<=num;i++){
-          sum+=i
-      }
+// //  problem 07 solution
+// var summation = function(num:number) {
+//   return (num*(num+1))/2
+// };
 
-      return sum
-};
+// console.log(summation(8))
+// console.log(summation(1))
 
-console.log(summation(8))
-console.log(summation(1))
+// // problem 08 solution
+
+// var booleanToString = function(b:boolean) {
+//   return String(b)
+// };
+// console.log(booleanToString(true))
+// console.log(booleanToString(false))
