@@ -80,10 +80,25 @@
 
 // console.log(repeatStr(0,"hello"))
 
-var solution = function (str: string) {
-  return str.split("-").reverse().join("");
+//  problem 05 solution
+// var solution = function (str: string) {
+//   return str.split("").reverse().join("");
+// };
+
+// console.log(solution("hello"));
+// console.log(solution("world"));
+// console.log(solution(""));
+
+// prolem 06 solution
+
+var positiveSum = function (arr: number[]) {
+  return arr.reduce((acc, curr) => {
+    if (curr > 0) {
+      return acc + curr;
+    }
+    return acc;
+  }, 0);
 };
 
-console.log(solution("hello"));
-console.log(solution("world"));
-console.log(solution(""));
+console.log(positiveSum([1, -4, 7, 12]))
+console.log(positiveSum([-1, -2, 0, -5]))
