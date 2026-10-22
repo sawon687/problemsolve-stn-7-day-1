@@ -20,14 +20,13 @@
 
 // staircase(4)
 
-
 // // problem 2 solution
 
 // var gradingStudents = function(grades:number[]) {
 //   const newArray:number[]=[]
 //    for(let grade of grades){
- 
-//       const nextMultipleOfFive = Math.ceil(grade / 5)*5 
+
+//       const nextMultipleOfFive = Math.ceil(grade / 5)*5
 //       const newValue=grade>=38 && ((nextMultipleOfFive-grade)<3)?nextMultipleOfFive:grade
 //       newArray.push(newValue)
 //    }
@@ -35,19 +34,16 @@
 //    return newArray
 // };
 
-
 // console.log(gradingStudents([73, 67, 38, 33]))
 
 // problem 3 solution
 
 // var timeConversion = function(s:string) {
-    
+
 //     const modifier=s.slice(-2)
 //     const modifierTimer=s.slice(0,-2)
-  
 
 //     let [hour,minute,second]=modifierTimer.split(":")
-
 
 //         if(hour==='12')
 //         {
@@ -62,7 +58,7 @@
 //     return `${hour}:${minute}:${second}`
 // };
 
-// console.log(timeConversion("07:05:45PM")); 
+// console.log(timeConversion("07:05:45PM"));
 
 // problem 04 solution
 // // option 1
@@ -79,10 +75,15 @@
 // var repeatStr = function(n:number, s:string) {
 
 //     return s.repeat(n)
-  
+
 // };
 
 // console.log(repeatStr(0,"hello"))
 
+var solution = function (str: string) {
+  return str.split("-").reverse().join("");
+};
 
-
+console.log(solution("hello"));
+console.log(solution("world"));
+console.log(solution(""));
