@@ -89,16 +89,29 @@
 // console.log(solution("world"));
 // console.log(solution(""));
 
-// prolem 06 solution
+// // prolem 06 solution
 
-var positiveSum = function (arr: number[]) {
-  return arr.reduce((acc, curr) => {
-    if (curr > 0) {
-      return acc + curr;
-    }
-    return acc;
-  }, 0);
+// var positiveSum = function (arr: number[]) {
+//   return arr.reduce((acc, curr) => {
+//     if (curr > 0) {
+//       return acc + curr;
+//     }
+//     return acc;
+//   }, 0);
+// };
+
+// console.log(positiveSum([1, -4, 7, 12]))
+// console.log(positiveSum([-1, -2, 0, -5]))
+
+//  problem 07 solution
+var summation = function(num:number) {
+    let sum=0
+      for(let i=1;i<=num;i++){
+          sum+=i
+      }
+
+      return sum
 };
 
-console.log(positiveSum([1, -4, 7, 12]))
-console.log(positiveSum([-1, -2, 0, -5]))
+console.log(summation(8))
+console.log(summation(1))
