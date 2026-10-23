@@ -144,3 +144,20 @@
 
 // console.log(fizzBuzz(5))
 // console.log(fizzBuzz(15))
+
+// problem 10 solution
+
+var runningSum = function(nums:number[]) {
+    const arr=[]
+      let sum=0
+     for(let i=0 ; i<nums.length; i++){
+           
+          sum+=nums[i]
+          arr.push(sum)
+     }
+
+     return arr
+}
+
+console.log(runningSum( [1, 2, 3, 4]))
+console.log(runningSum( [1, 1, 1, 1, 1]))
