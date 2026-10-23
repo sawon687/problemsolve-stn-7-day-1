@@ -136,7 +136,6 @@
 //             arr.push(String(i))
 //           }
 
-          
 //       }
 
 //       return arr
@@ -151,7 +150,7 @@
 //     const arr:number[]=[]
 //       let sum=0
 //      for(let i=0 ; i<nums.length; i++){
-           
+
 //           sum+=nums[i]
 //           arr.push(sum)
 //      }
@@ -162,22 +161,40 @@
 // console.log(runningSum( [1, 2, 3, 4]))
 // console.log(runningSum( [1, 1, 1, 1, 1]))
 
-// problem 11 solution
-var maximumWealth = function(accounts:number[][]) {
-    
-           let maximum = 0
+// // problem 11 solution
+// var maximumWealth = function(accounts:number[][]) {
 
-           for(let i=0; i<accounts.length; i++) {
-             let sum = 0
-             for(let j=0; j<accounts[i].length; j++) {
-               sum += accounts[i][j]
-             }
-             maximum = Math.max(maximum, sum)
-           }
+//            let maximum = 0
 
-           return maximum
+//            for(let i=0; i<accounts.length; i++) {
+//              let sum = 0
+//              for(let j=0; j<accounts[i].length; j++) {
+//                sum += accounts[i][j]
+//              }
+//              maximum = Math.max(maximum, sum)
+//            }
 
-};
+//            return maximum
 
-console.log(maximumWealth([[1, 5], [7, 3], [3, 5]]))
-console.log(maximumWealth([[1, 2, 3], [3, 2, 1]]))
+// };
+
+// console.log(maximumWealth([[1, 5], [7, 3], [3, 5]]))
+// console.log(maximumWealth([[1, 2, 3], [3, 2, 1]]))
+
+// // problem 12 solution
+// var removeDuplicates = function (nums: number[]) {
+//      let k=1
+
+//      for(let i=0 ; i<nums.length ;i++)
+//      {
+//          if(nums[i]!==nums[k-1])
+//          {   nums[k]=nums[i]
+//              k++
+//          }
+//      }
+
+//      return k
+// };
+
+// console.log(removeDuplicates([1, 1, 2]))
+// console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
