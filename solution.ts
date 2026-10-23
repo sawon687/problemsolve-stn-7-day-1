@@ -145,19 +145,39 @@
 // console.log(fizzBuzz(5))
 // console.log(fizzBuzz(15))
 
-// problem 10 solution
+// // problem 10 solution
 
-var runningSum = function(nums:number[]) {
-    const arr=[]
-      let sum=0
-     for(let i=0 ; i<nums.length; i++){
+// var runningSum = function(nums:number[]) {
+//     const arr:number[]=[]
+//       let sum=0
+//      for(let i=0 ; i<nums.length; i++){
            
-          sum+=nums[i]
-          arr.push(sum)
-     }
+//           sum+=nums[i]
+//           arr.push(sum)
+//      }
 
-     return arr
-}
+//      return arr
+// }
 
-console.log(runningSum( [1, 2, 3, 4]))
-console.log(runningSum( [1, 1, 1, 1, 1]))
+// console.log(runningSum( [1, 2, 3, 4]))
+// console.log(runningSum( [1, 1, 1, 1, 1]))
+
+// problem 11 solution
+var maximumWealth = function(accounts:number[][]) {
+    
+           let maximum = 0
+
+           for(let i=0; i<accounts.length; i++) {
+             let sum = 0
+             for(let j=0; j<accounts[i].length; j++) {
+               sum += accounts[i][j]
+             }
+             maximum = Math.max(maximum, sum)
+           }
+
+           return maximum
+
+};
+
+console.log(maximumWealth([[1, 5], [7, 3], [3, 5]]))
+console.log(maximumWealth([[1, 2, 3], [3, 2, 1]]))
