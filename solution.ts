@@ -198,3 +198,14 @@
 
 // console.log(removeDuplicates([1, 1, 2]))
 // console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+// problem 13  solution
+var containsDuplicate = function (nums: number[]) {
+
+  const set=new Set(nums)
+
+  return set.size!==nums.length
+};
+
+console.log(containsDuplicate([1, 2, 3, 2]));
+console.log(containsDuplicate([1, 2, 3, 4]));
+console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));
