@@ -8,7 +8,7 @@ The problems are implemented using JavaScript and focus on developing logical th
 
 ## Technologies Used
 
-- JavaScript
+- TypeScript
 - Problem Solving
 - Algorithms and Data Structures
 - Array and String Manipulation
